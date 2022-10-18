@@ -3,6 +3,7 @@
 ## Used technologies:
 
 ### Backend part:
+- `esbuild`
 - ruby '3.1.2'
 - gem 'rails', '~> 7.0.4'
 - gem 'pg', '~> 1.1'
@@ -23,6 +24,10 @@ git clone git@github.com:tumophiy/ftl-task.git
 2. Install dependencies if you don't have it:
 ```shell
 npm i daisyui
+```
+10. Because I used `esbuild` in this project in order to run it you have to use command:
+```shell
+./bin/dev
 ```
 
 Things you may want to cover:
