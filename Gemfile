@@ -7,6 +7,7 @@ ruby '3.1.2'
 
 gem 'rails', '~> 7.0.4'
 
+gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 gem 'jsbundling-rails'
 gem 'pg', '~> 1.1'
