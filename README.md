@@ -25,6 +25,15 @@ git clone git@github.com:tumophiy/ftl-task.git
 ```shell
 npm i daisyui
 ```
+3. Install gems:
+```shell
+bundle install
+```
+4. Create and migrate database:
+```shell
+rails db:create
+rails db:migrate
+```
 10. Because I used `esbuild` in this project in order to run it you have to use command:
 ```shell
 ./bin/dev
