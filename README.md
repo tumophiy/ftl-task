@@ -41,6 +41,8 @@ rails db:migrate
 
 ### Structure of db:
 ![](./pics/screenshot.png)
+- Amount, name are required fields for expenses table
+- Description is optional
 
 Things you may want to cover:
 * Configuration
