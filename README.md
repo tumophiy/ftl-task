@@ -30,6 +30,9 @@ npm i daisyui
 ./bin/dev
 ```
 
+### Structure of db:
+![](./pics/screenshot.png)
+
 Things you may want to cover:
 * Configuration
 * Database initialization
