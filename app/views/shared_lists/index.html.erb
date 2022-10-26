@@ -1,0 +1,10 @@
+<h1>Shared with you:</h1>
+
+<div id="list">
+  <% @list.each do |expense| %>
+    <%= render expense %>
+    <p>
+      <%= link_to "Show this expense", expense %>
+    </p>
+  <% end %>
+</div>
