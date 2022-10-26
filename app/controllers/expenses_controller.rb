@@ -4,6 +4,8 @@ class ExpensesController < ApplicationController
   before_action :set_expense, only: %i[show edit update destroy]
 
   def index
+    @categories = Expense.all.order(:category).pluck(:category).uniq
+    @values = Expense.all.order(:value).pluck(:value).uniq
     @expenses = Expense.all
   end
 
