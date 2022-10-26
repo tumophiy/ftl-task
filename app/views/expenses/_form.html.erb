@@ -1,0 +1,26 @@
+<%= form_with(model: expense) do |form| %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :value, style: "display: block" %>
+    <%= form.number_field :value %>
+  </div>
+
+  <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= select_tag :category, options_for_select(Expense.categories.keys) %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
