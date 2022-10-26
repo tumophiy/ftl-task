@@ -9,6 +9,7 @@ FactoryBot.define do
     association :user_id
 
     trait :invalid_expense do
+      to_create { |instance| instance.save(validate: false) }
       name {}
       value {}
       description {}
