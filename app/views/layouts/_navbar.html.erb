@@ -4,7 +4,7 @@
   </div>
   <div class="flex justify-end flex-1 px-2">
     <div class="flex items-stretch">
-      <a class="btn btn-ghost rounded-btn">Button</a>
+      <%= link_to "Share list", new_shared_list_path, class: "btn btn-ghost rounded-btn" %>
       <% if current_user %>
         <ul class="nav-item"> <%= link_to "Edit Account", edit_user_registration_path, class: "btn btn-ghost rounded-btn" %></ul>
         <ul class="nav-item"> <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-primary" %></ul>
@@ -12,13 +12,6 @@
         <ul class="nav-item"> <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary"  %></ul>
         <ul class="nav-item"> <%= link_to "Sign In", new_user_session_path, class: "btn btn-ghost rounded-btn"  %></ul>
       <% end %>
-      <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-ghost rounded-btn">Dropdown</label>
-        <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-          <li><a>Item 1</a></li>
-          <li><a>Item 2</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 </div>
