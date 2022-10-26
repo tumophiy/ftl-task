@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_18_123132) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_26_053546) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,6 +23,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_18_123132) do
     t.bigint "user_id"
     t.string "category"
     t.index ["user_id"], name: "index_expenses_on_user_id"
+  end
+
+  create_table "shared_lists", force: :cascade do |t|
+    t.bigint "owner_id"
+    t.bigint "viewer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["owner_id"], name: "index_shared_lists_on_owner_id"
+    t.index ["viewer_id"], name: "index_shared_lists_on_viewer_id"
   end
 
   create_table "users", force: :cascade do |t|

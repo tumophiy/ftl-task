@@ -1,0 +1,11 @@
+<%= form_with(model: shared_list) do |form| %>
+
+  <div>
+    <%= form.label :friends_email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
