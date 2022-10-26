@@ -17,6 +17,7 @@
 - Component library - [daisyUI](https://daisyui.com)
 
 ## How to run project:
+Visit [heroku web page](https://faster-then-light.herokuapp.com/users/sign_in) or:
 1. Clone the repo:
 ```shell
 git clone git@github.com:tumophiy/ftl-task.git
