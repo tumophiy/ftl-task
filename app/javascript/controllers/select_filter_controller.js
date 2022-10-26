@@ -8,7 +8,7 @@ export default class extends Controller {
   }
 
   publisherChange(event) {
-    this.filters.publishers = getSelectedValues(event)
+    this.filters.values = getSelectedValues(event)
     this.change()
   }
 
