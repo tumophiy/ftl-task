@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :expenses
   resources :shared_lists, only: %i[index new create]
-  root 'welcome#index'
+  root 'expenses#index'
 end
